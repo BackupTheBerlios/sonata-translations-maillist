@@ -1,0 +1,136 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Sonata-translations] Danish translation and some bugs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/sonata-translations/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C6ae416730710280642t5e425d45nc1416a4df28b2c37%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000023.html">
+   <LINK REL="Next"  HREF="000026.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Sonata-translations] Danish translation and some bugs</H1>
+    <B>Martin Dybdal</B> 
+    <A HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C6ae416730710280642t5e425d45nc1416a4df28b2c37%40mail.gmail.com%3E"
+       TITLE="[Sonata-translations] Danish translation and some bugs">dybber at dybber.dk
+       </A><BR>
+    <I>Sun Oct 28 14:42:26 CET 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000023.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+        <LI>Next message: <A HREF="000026.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#25">[ date ]</a>
+              <a href="thread.html#25">[ thread ]</a>
+              <a href="subject.html#25">[ subject ]</a>
+              <a href="author.html#25">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>&gt;<i> Most people should never encounter this error message. And, to be
+</I>&gt;<i> honest, I stole this warning message from thunar (xfce's file manager)
+</I>&gt;<i> and figured it to be a decent default. If you or anyone else has a
+</I>&gt;<i> suggestion, I'd certainly consider it.
+</I>
+Ok, no suggestions from me though.
+
+&gt;<i> Are you sure you're looking at the svn version of the sonata? Sonata
+</I>&gt;<i> in svn (which will be the upcoming release) also now uses &quot;C_over Art&quot;
+</I>&gt;<i> because of a conflict with the close button.
+</I>
+No, I'm not using the svn version, I installed it from the .deb
+package found on the website. I'll install the svn version in a few
+days (after some exams on Monday and Wednesday).
+
+&gt;<i> Ctrl-J is no longer a shortcut in the upcoming release, its action is
+</I>&gt;<i> the default action when you simply press a key.
+</I>
+Ok, that's nice, I guess this behaviour still should be mentioned?
+
+&gt;<i> &gt;         The right-click menu disappears when the mouse button is
+</I>&gt;<i> &gt;         released I'm using Ubuntu 7.10. It happens with both the version
+</I>&gt;<i> &gt;         in the repository and the one from the sonata website.
+</I>&gt;<i>
+</I>&gt;<i> This happens everytime? I've had a report about this from someone in
+</I>&gt;<i> the past, but I've never experienced it even once myself.
+</I>
+Yes, every time when using the mouse, although when I use the
+&quot;Menu&quot;-button it stays open.
+
+&gt;<i> &gt;         The &quot;-s&quot;, &quot;--status&quot; argument in the man-page isn't really
+</I>&gt;<i> &gt;         there. It's just &quot;status&quot;.
+</I>&gt;<i>
+</I>&gt;<i> Hmm? There is no man page.. and it shows up correctly in sonata --help.
+</I>
+It looks like the man page i read was created by the debian-team.
+
+&gt;<i> &gt;         A specific search tab instead of the one in the bottom of the
+</I>&gt;<i> &gt;         Library or at least some global accessible jump-to-search
+</I>&gt;<i> &gt;         shortcut.
+</I>&gt;<i> &gt;
+</I>&gt;<i> &gt;         Easier access to the &quot;song info&quot; dialog than the &quot;right-click
+</I>&gt;<i> &gt;         the top-part&quot;. Maybe a shortcut?
+</I>&gt;<i>
+</I>&gt;<i> If you could add these to
+</I>&gt;<i> <A HREF="https://developer.berlios.de/feature/?group_id=7323,">https://developer.berlios.de/feature/?group_id=7323,</A> that'd be great.
+</I>&gt;<i> And please expand on the first one, maybe with an example, because I
+</I>&gt;<i> don't entirely understand it at first glance.
+</I>
+Ok, I have added them, just forget the search-tab thing, i found out
+that it's the shortcut I'm interested in :).
+
+&gt;<i> &gt;         A way to align some text to the right in the current playlist,
+</I>&gt;<i> &gt;         maybe with a special syntax or just a special field in the song
+</I>&gt;<i> &gt;         formatting tab. I would use this to display the length of the
+</I>&gt;<i> &gt;         tracks in the playlist.
+</I>&gt;<i>
+</I>&gt;<i> This is available in the upcoming release (user-configurable columns).
+</I>
+Cool.
+
+&gt;<i> &gt; Some more bugs, not translation-related:
+</I>&gt;<i> &gt;         &amp; &quot; and other entities displayed wrongly in lyrics and
+</I>&gt;<i> &gt;         the genre chooser (in the tag editor). I was listening to B.B.
+</I>&gt;<i> &gt;         King's &quot;Why I sing the blues&quot; when I saw this: &quot;&amp;quot;You
+</I>&gt;<i> &gt;         haven't been around long enough&amp;quot;&quot; Maybe just a problem
+</I>&gt;<i> &gt;         with the specific lyric?
+</I>
+--
+
+&gt;<i> It looks like it's a problem with the actual song lyrics:
+</I>&gt;<i> <A HREF="http://lyricwiki.org/B.B._King:Why_I_Sing_The_Blues">http://lyricwiki.org/B.B._King:Why_I_Sing_The_Blues</A>
+</I>&gt;<i> It's a wiki so you can edit the changes and fix it.
+</I>
+Oh, ok, its done :-)
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000023.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+	<LI>Next message: <A HREF="000026.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#25">[ date ]</a>
+              <a href="thread.html#25">[ thread ]</a>
+              <a href="subject.html#25">[ subject ]</a>
+              <a href="author.html#25">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/sonata-translations">More information about the Sonata-translations
+mailing list</a><br>
+</body></html>

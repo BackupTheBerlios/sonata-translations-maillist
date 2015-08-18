@@ -1,0 +1,155 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Sonata-translations] Danish translation and some bugs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/sonata-translations/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C35a6f8e30710260559o1431eebdv34a5fa7e3bacab5%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000017.html">
+   <LINK REL="Next"  HREF="000023.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Sonata-translations] Danish translation and some bugs</H1>
+    <B>Scott Horowitz</B> 
+    <A HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C35a6f8e30710260559o1431eebdv34a5fa7e3bacab5%40mail.gmail.com%3E"
+       TITLE="[Sonata-translations] Danish translation and some bugs">stonecrest at gmail.com
+       </A><BR>
+    <I>Fri Oct 26 14:59:13 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000017.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+        <LI>Next message: <A HREF="000023.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#18">[ date ]</a>
+              <a href="thread.html#18">[ thread ]</a>
+              <a href="subject.html#18">[ subject ]</a>
+              <a href="author.html#18">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On 10/26/07, Martin Dybdal &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">dybber at dybber.dk</A>&gt; wrote:
+&gt;<i> Hi Sonata translators and maintainers
+</I>&gt;<i>
+</I>&gt;<i> I've created a danish translation of Sonata, my favourite interface to
+</I>&gt;<i> my favourite music player (the latter is because of the former). The
+</I>&gt;<i> translation is attached.
+</I>
+Thanks for the kind words and the translation :)
+
+&gt;<i> I have translated everything except the error
+</I>&gt;<i> &quot;Sonata failed to connect to the D-BUS session bus: Unable to determine
+</I>&gt;<i> the address of the message bus (try 'man dbus-launch' and 'man
+</I>&gt;<i> dbus-daemon' for help)&quot;.
+</I>&gt;<i> I can easily translate it, but I thought that it might be easier for
+</I>&gt;<i> users to get help when the error-message is something more people (that
+</I>&gt;<i> is; not only Danes) can read. Should I add the translation or not? The
+</I>&gt;<i> other error-messages are easier to understand and I think that most
+</I>&gt;<i> people would be able to solve those problems them self, or said in
+</I>&gt;<i> another way: this was the only error-message i didn't fully understand
+</I>&gt;<i> myself (D-BUS?).
+</I>
+Most people should never encounter this error message. And, to be
+honest, I stole this warning message from thunar (xfce's file manager)
+and figured it to be a decent default. If you or anyone else has a
+suggestion, I'd certainly consider it.
+
+&gt;<i>         The text for the second tab in the &quot;song info&quot; dialog is &quot;_Cover
+</I>&gt;<i>         Art&quot; in the code (sonata.py) and &quot;C_over Art&quot; in the translation
+</I>&gt;<i>         files? I kept the one in the translation file and modified my
+</I>&gt;<i>         sonata.py to get it to show op correctly.
+</I>
+Are you sure you're looking at the svn version of the sonata? Sonata
+in svn (which will be the upcoming release) also now uses &quot;C_over Art&quot;
+because of a conflict with the close button.
+
+&gt;<i>         In the same dialog, on the lyrics tab. There is a search button
+</I>&gt;<i>         the shortcut for it (ALT+S) is the same as one of the tabs...
+</I>&gt;<i>
+</I>&gt;<i>         The &quot;by&quot; and &quot;from&quot; in the following line of code should maybe
+</I>&gt;<i>         be customisable from translation files?
+</I>&gt;<i>             self.currsongformat2 = &quot;by %A from %B&quot;
+</I>&gt;<i>         The same with the name of the default profile
+</I>
+Good call on these, I will fix these for the subsequent release.
+
+&gt;<i>         I couldn't find the description of the &quot;CTRL+J&quot; shortcut in the
+</I>&gt;<i>         messages.po file. I just added a line for it to the translation
+</I>&gt;<i>         file.
+</I>
+Ctrl-J is no longer a shortcut in the upcoming release, its action is
+the default action when you simply press a key.
+
+&gt;<i> Some more bugs, not translation-related:
+</I>&gt;<i>         &amp; &quot; and other entities displayed wrongly in lyrics and
+</I>&gt;<i>         the genre chooser (in the tag editor). I was listening to B.B.
+</I>&gt;<i>         King's &quot;Why I sing the blues&quot; when I saw this: &quot;&amp;quot;You
+</I>&gt;<i>         haven't been around long enough&amp;quot;&quot; Maybe just a problem
+</I>&gt;<i>         with the specific lyric?
+</I>
+Interesting.. Can you send me this music file (<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">stonecrest at gmail.com</A>)
+so I can investigate? I haven't seen this before.
+
+&gt;<i>         The right-click menu disappears when the mouse button is
+</I>&gt;<i>         released I'm using Ubuntu 7.10. It happens with both the version
+</I>&gt;<i>         in the repository and the one from the sonata website.
+</I>
+This happens everytime? I've had a report about this from someone in
+the past, but I've never experienced it even once myself.
+
+&gt;<i>         The &quot;-s&quot;, &quot;--status&quot; argument in the man-page isn't really
+</I>&gt;<i>         there. It's just &quot;status&quot;.
+</I>
+Hmm? There is no man page.. and it shows up correctly in sonata --help.
+
+&gt;<i>         A specific search tab instead of the one in the bottom of the
+</I>&gt;<i>         Library or at least some global accessible jump-to-search
+</I>&gt;<i>         shortcut.
+</I>&gt;<i>
+</I>&gt;<i>         Easier access to the &quot;song info&quot; dialog than the &quot;right-click
+</I>&gt;<i>         the top-part&quot;. Maybe a shortcut?
+</I>
+If you could add these to
+<A HREF="https://developer.berlios.de/feature/?group_id=7323,">https://developer.berlios.de/feature/?group_id=7323,</A> that'd be great.
+And please expand on the first one, maybe with an example, because I
+don't entirely understand it at first glance.
+
+&gt;<i>         A way to align some text to the right in the current playlist,
+</I>&gt;<i>         maybe with a special syntax or just a special field in the song
+</I>&gt;<i>         formatting tab. I would use this to display the length of the
+</I>&gt;<i>         tracks in the playlist.
+</I>
+This is available in the upcoming release (user-configurable columns).
+
+Scott
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000017.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+	<LI>Next message: <A HREF="000023.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#18">[ date ]</a>
+              <a href="thread.html#18">[ thread ]</a>
+              <a href="subject.html#18">[ subject ]</a>
+              <a href="author.html#18">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/sonata-translations">More information about the Sonata-translations
+mailing list</a><br>
+</body></html>

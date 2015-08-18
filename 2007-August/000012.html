@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Sonata-translations] Dutch translation for Sonata 1.2.1 (rev.	505)
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/sonata-translations/2007-August/index.html" >
+   <LINK REL="made" HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Dutch%20translation%20for%20Sonata%201.2.1%20%28rev.%0A%09505%29&In-Reply-To=%3C21c30b1b0708290521k19b31f35n7a0633afd7d188a4%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Sonata-translations] Dutch translation for Sonata 1.2.1 (rev.	505)</H1>
+    <B>Desmond O. Chang</B> 
+    <A HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Dutch%20translation%20for%20Sonata%201.2.1%20%28rev.%0A%09505%29&In-Reply-To=%3C21c30b1b0708290521k19b31f35n7a0633afd7d188a4%40mail.gmail.com%3E"
+       TITLE="[Sonata-translations] Dutch translation for Sonata 1.2.1 (rev.	505)">dochang at gmail.com
+       </A><BR>
+    <I>Wed Aug 29 14:21:59 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[Sonata-translations] Dutch translation for Sonata 1.2.1 (rev.	505)
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>On 8/29/07, Scott Horowitz &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">stonecrest at gmail.com</A>&gt; wrote:
+&gt;<i> On 8/18/07, olivier &lt;<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">litemotiv at gmail.com</A>&gt; wrote:
+</I>&gt;<i> &gt; Thanks for the feedback guys, here is an updated version. ;-)
+</I>&gt;<i>
+</I>&gt;<i> Hi Olivier,
+</I>&gt;<i>
+</I>&gt;<i> So, despite the po file correctly generating a mo file, it turns out
+</I>&gt;<i> that the nl.po file causes Sonata to crash (at least on Archlinux). It
+</I>&gt;<i> fails with: &quot;ValueError: plural forms expression could be dangerous&quot;
+</I>&gt;<i>
+</I>&gt;<i> I have no idea what that means (google doesn't show much), but I ended
+</I>&gt;<i> up removing the line in the header of the po file that says:
+</I>&gt;<i> &quot;Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n&quot;. After that, it
+</I>&quot;INTEGER&quot; and &quot;EXPRESSION&quot; will be used directly in gettext library.
+INTEGER must be a decimal number which specifies how many different
+plural forms exist for this language. EXPRESSION is an expression
+which is using the C language syntax. The only variable allowed in
+EXPRESSION is n. For example, in English, since the singular form is
+used for one only, this line would be:
+  Plural-Forms: nplurals=2; plural=n != 1;
+But in French, this line would be:
+  Plural-Forms: nplurals=2; plural=n &gt; 1;
+since the singular form is used for zero and one.
+&gt;<i> seems to work properly. I don't know what this line is supposed to do
+</I>&gt;<i> or why it caused a problem, so please tell me if something should be
+</I>&gt;<i> added in its place (as opposed to my simply removing the line).
+</I>&gt;<i>
+</I>&gt;<i> Scott
+</I>&gt;<i> _______________________________________________
+</I>&gt;<i> Sonata-translations mailing list
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">Sonata-translations at lists.berlios.de</A>
+</I>&gt;<i> <A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">https://lists.berlios.de/mailman/listinfo/sonata-translations</A>
+</I>&gt;<i>
+</I>
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[Sonata-translations] Dutch translation for Sonata 1.2.1 (rev.	505)
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/sonata-translations">More information about the Sonata-translations
+mailing list</a><br>
+</body></html>

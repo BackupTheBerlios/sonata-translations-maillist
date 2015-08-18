@@ -1,0 +1,93 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Sonata-translations] error about opening of sonata
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/sonata-translations/2008-October/index.html" >
+   <LINK REL="made" HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20error%20about%20opening%20of%20sonata&In-Reply-To=%3C579eef480810240715k87a2802ha35fd751ce2caf95%40mail.gmail.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000114.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Sonata-translations] error about opening of sonata</H1>
+    <B>G&#246;kmen G&#246;rgen</B> 
+    <A HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20error%20about%20opening%20of%20sonata&In-Reply-To=%3C579eef480810240715k87a2802ha35fd751ce2caf95%40mail.gmail.com%3E"
+       TITLE="[Sonata-translations] error about opening of sonata">gkmngrgn at gmail.com
+       </A><BR>
+    <I>Fri Oct 24 16:15:50 CEST 2008</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000114.html">[Sonata-translations] error about opening of sonata
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#113">[ date ]</a>
+              <a href="thread.html#113">[ thread ]</a>
+              <a href="subject.html#113">[ subject ]</a>
+              <a href="author.html#113">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi,
+This day, i tried to open the sonata from terminal:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">gkmngrgn at genovo</A> ~ $ sonata
+Traceback (most recent call last):
+  File &quot;/usr/bin/sonata&quot;, line 48, in &lt;module&gt;
+    app = main.Base()
+  File &quot;/usr/lib/python2.5/site-packages/sonata/main.py&quot;, line 1070, in
+__init__
+    self.iterate_now()
+  File &quot;/usr/lib/python2.5/site-packages/sonata/main.py&quot;, line 1664, in
+iterate_now
+    self.iterate()
+  File &quot;/usr/lib/python2.5/site-packages/sonata/main.py&quot;, line 1621, in
+iterate
+    self.handle_change_status()
+  File &quot;/usr/lib/python2.5/site-packages/sonata/main.py&quot;, line 3457, in
+handle_change_status
+    self.current_update()
+  File &quot;/usr/lib/python2.5/site-packages/sonata/main.py&quot;, line 3915, in
+current_update
+    self.currentdata.append([int(mpdh.get(track, 'id'))] + items)
+ValueError: invalid literal for int() with base 10: ''
+<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">gkmngrgn at genovo</A> ~ $
+
+Yes, sonata did not open; but i tried a command too:
+
+<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">gkmngrgn at genovo</A> ~ $ LC_ALL=C sonata
+^<A HREF="https://lists.berlios.de/mailman/listinfo/sonata-translations">Cgkmngrgn at genovo</A> ~ $
+
+Yes, it works. When i added &quot;LC_ALL=C&quot; front of  &quot;sonata&quot;, it works; but i
+can not see the translation, naturally. How can i solve this problem?
+-------------- next part --------------
+An HTML attachment was scrubbed...
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/sonata-translations/attachments/20081024/f6e35c54/attachment.html">https://lists.berlios.de/pipermail/sonata-translations/attachments/20081024/f6e35c54/attachment.html</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000114.html">[Sonata-translations] error about opening of sonata
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#113">[ date ]</a>
+              <a href="thread.html#113">[ thread ]</a>
+              <a href="subject.html#113">[ subject ]</a>
+              <a href="author.html#113">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/sonata-translations">More information about the Sonata-translations
+mailing list</a><br>
+</body></html>

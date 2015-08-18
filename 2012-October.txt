@@ -1,0 +1,31 @@
+From johnny at solbu.net  Thu Oct 18 22:56:28 2012
+From: johnny at solbu.net (Johnny Solbu)
+Date: Thu, 18 Oct 2012 21:56:28 +0100
+Subject: [Sonata-translations] Norwegian translation
+Message-ID: <201210182256.33088.johnny@solbu.net>
+
+I have translated latest svn version of sonata into Norwegian Bokm?l (nb)
+I have attached the po-file.
+
+-- 
+Johnny A. Solbu
+web site,   http://www.solbu.net
+PGP key ID: 0xFA687324
+********************************
+Kom Arbeidslyst og treng deg p?,
+her skal du motstand finne.
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: sonata-1.6.2.1.nb.po
+Type: application/x-gettext
+Size: 36676 bytes
+Desc: not available
+URL: <https://lists.berlios.de/pipermail/sonata-translations/attachments/20121018/30b29f54/attachment-0001.bin>
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: signature.asc
+Type: application/pgp-signature
+Size: 189 bytes
+Desc: This is a digitally signed message part.
+URL: <https://lists.berlios.de/pipermail/sonata-translations/attachments/20121018/30b29f54/attachment-0001.pgp>
+

@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Sonata-translations] Danish translation and some bugs
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/sonata-translations/2007-October/index.html" >
+   <LINK REL="made" HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C1193392741.5697.14.camel%40martin-pc%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000016.html">
+   <LINK REL="Next"  HREF="000018.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Sonata-translations] Danish translation and some bugs</H1>
+    <B>Martin Dybdal</B> 
+    <A HREF="mailto:sonata-translations%40lists.berlios.de?Subject=Re%3A%20%5BSonata-translations%5D%20Danish%20translation%20and%20some%20bugs&In-Reply-To=%3C1193392741.5697.14.camel%40martin-pc%3E"
+       TITLE="[Sonata-translations] Danish translation and some bugs">dybber at dybber.dk
+       </A><BR>
+    <I>Fri Oct 26 11:59:01 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000016.html">[Sonata-translations] Dutch translation update
+</A></li>
+        <LI>Next message: <A HREF="000018.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#17">[ date ]</a>
+              <a href="thread.html#17">[ thread ]</a>
+              <a href="subject.html#17">[ subject ]</a>
+              <a href="author.html#17">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Hi Sonata translators and maintainers
+
+I've created a danish translation of Sonata, my favourite interface to
+my favourite music player (the latter is because of the former). The
+translation is attached. I have translated everything except the error
+&quot;Sonata failed to connect to the D-BUS session bus: Unable to determine
+the address of the message bus (try 'man dbus-launch' and 'man
+dbus-daemon' for help)&quot;.
+I can easily translate it, but I thought that it might be easier for
+users to get help when the error-message is something more people (that
+is; not only Danes) can read. Should I add the translation or not? The
+other error-messages are easier to understand and I think that most
+people would be able to solve those problems them self, or said in
+another way: this was the only error-message i didn't fully understand
+myself (D-BUS?).
+
+I discovered some errors while doing the translation, they are here:
+
+        The text for the second tab in the &quot;song info&quot; dialog is &quot;_Cover
+        Art&quot; in the code (sonata.py) and &quot;C_over Art&quot; in the translation
+        files? I kept the one in the translation file and modified my
+        sonata.py to get it to show op correctly.
+        
+        In the same dialog, on the lyrics tab. There is a search button
+        the shortcut for it (ALT+S) is the same as one of the tabs...
+        
+        The &quot;by&quot; and &quot;from&quot; in the following line of code should maybe
+        be customisable from translation files?
+            self.currsongformat2 = &quot;by %A from %B&quot;
+        The same with the name of the default profile
+
+	I couldn't find the description of the &quot;CTRL+J&quot; shortcut in the 
+	messages.po file. I just added a line for it to the translation 
+	file.
+        
+Some more bugs, not translation-related:
+	&amp; &quot; and other entities displayed wrongly in lyrics and
+        the genre chooser (in the tag editor). I was listening to B.B.
+        King's &quot;Why I sing the blues&quot; when I saw this: &quot;&amp;quot;You
+        haven't been around long enough&amp;quot;&quot; Maybe just a problem
+        with the specific lyric?
+
+        The right-click menu disappears when the mouse button is
+        released I'm using Ubuntu 7.10. It happens with both the version
+        in the repository and the one from the sonata website.
+        
+        The &quot;-s&quot;, &quot;--status&quot; argument in the man-page isn't really
+        there. It's just &quot;status&quot;.
+
+And I also have some requests for features (yeah this is probably the 
+wrong place for these, where should I add them?):
+        
+        A specific search tab instead of the one in the bottom of the
+        Library or at least some global accessible jump-to-search
+        shortcut.
+        
+        Easier access to the &quot;song info&quot; dialog than the &quot;right-click
+        the top-part&quot;. Maybe a shortcut?
+        
+        A way to align some text to the right in the current playlist,
+        maybe with a special syntax or just a special field in the song
+        formatting tab. I would use this to display the length of the
+        tracks in the playlist.
+
+
+Martin Dybdal
+
+-------------- next part --------------
+A non-text attachment was scrubbed...
+Name: sonata.po
+Type: text/x-gettext-translation
+Size: 26668 bytes
+Desc: not available
+URL: &lt;<A HREF="https://lists.berlios.de/pipermail/sonata-translations/attachments/20071026/f42518f7/attachment.bin">https://lists.berlios.de/pipermail/sonata-translations/attachments/20071026/f42518f7/attachment.bin</A>&gt;
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000016.html">[Sonata-translations] Dutch translation update
+</A></li>
+	<LI>Next message: <A HREF="000018.html">[Sonata-translations] Danish translation and some bugs
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#17">[ date ]</a>
+              <a href="thread.html#17">[ thread ]</a>
+              <a href="subject.html#17">[ subject ]</a>
+              <a href="author.html#17">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/sonata-translations">More information about the Sonata-translations
+mailing list</a><br>
+</body></html>
